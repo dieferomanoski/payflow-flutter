@@ -10,10 +10,9 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Stack(
-        alignment: Alignment.center,
         children: [
-          Image.asset(AppImages.union),
-          Image.asset(AppImages.logoFull),
+          Center(child: Image.asset(AppImages.union)),
+          Center(child: Image.asset(AppImages.logoFull)),
         ],
       ),
     );
